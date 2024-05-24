@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanSublet Admin Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>UrbanSublet</h1>
+        <!-- Navigation for regular users -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="submit-a-listing.html">Submit Your Listing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="admin-portal.html">Admin</a></li> <!-- Direct link to admin portal page -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="listings">
+        <!-- Listings will be dynamically populated here -->
+        <div class="filter-container">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="condo">Condo</option>
+            </select>
+        </div>
+        <div class="listing" data-category="apartment">
+            <img src="https://via.placeholder.com/300" alt="Apartment">
+            <h3>Apartment Listing 1</h3>
+            <p>Description of the apartment listing 1.</p>
+            <p>Price: $1000</p>
+            <p>Location: New York</p>
+        </div>
+        <div class="listing" data-category="house">
+            <img src="https://via.placeholder.com/300" alt="House">
+            <h3>House Listing 1</h3>
+            <p>Description of the house listing 1.</p>
+            <p>Price: $2000</p>
+            <p>Location: Los Angeles</p>
+        </div>
+        <div class="listing" data-category="condo">
+            <img src="https://via.placeholder.com/300" alt="Condo">
+            <h3>Condo Listing 1</h3>
+            <p>Description of the condo listing 1.</p>
+            <p>Price: $1500</p>
+            <p>Location: Miami</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 UrbanSublet. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

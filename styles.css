@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* Light gray */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    /* Dark gray */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.listing {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.listing img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Filtering Styles */
+.filter-container {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    /* Dark gray */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
