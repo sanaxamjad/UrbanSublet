@@ -17,9 +17,9 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#listings">Listings</a></li>
                 <li><a href="submit-a-listing.html">Submit Your Listing</a></li>
-                <li><a href="about.html">About</a></li> <!-- Updated href attribute -->
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="account.html">Account</a></li> <!-- Updated href attribute -->
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
@@ -27,21 +27,28 @@
 
     <!-- Main content -->
     <h2>Submit Your Listing</h2>
-    <form id="listing-form" method="post">
+    <form id="listing-form" method="post" enctype="multipart/form-data">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br><br>
-        <label for="image-url">Image URL:</label>
-        <input type="text" id="image-url" name="image-url" required><br><br>
+
+        <label for="image-upload">Upload Image:</label>
+        <input type="file" id="image-upload" name="image-upload" accept="image/jpeg, image/png" required><br><br>
+
         <label for="description">Description:</label><br>
         <textarea id="description" name="description" required></textarea><br><br>
+
         <label for="price">Price:</label>
         <input type="text" id="price" name="price" required><br><br>
+
         <label for="location">Location:</label>
         <input type="text" id="location" name="location" required><br><br>
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
+
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required><br><br>
+
         <label for="category">Category:</label>
         <select id="category" name="category" required>
             <option value="">Select Category</option>
@@ -49,8 +56,10 @@
             <option value="house">House</option>
             <option value="condo">Condo</option>
         </select><br><br>
+
         <label for="amenities">Amenities:</label>
         <input type="text" id="amenities" name="amenities"><br><br>
+
         <button type="submit">Submit</button>
     </form>
     <!-- End of main content -->
