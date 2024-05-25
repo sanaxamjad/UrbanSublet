@@ -85,10 +85,6 @@ We welcome contributions to enhance UrbanSublet. To contribute:
 
 5. Open a pull request describing your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Thanks to the Pygame community for inspiration and support.
