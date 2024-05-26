@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+</head>
+<body>
+    <h1>User Accounts</h1>
+    <button onclick="loadUsers()">Load Users</button>
+    <ul id="userList"></ul>
+
+    <script>
+        function loadUsers() {
+            fetch('/api/users')
+                .then(response => response.json())
+                .then(data => {
+                    const userList = document.getElementById('userList');
+                    userList.innerHTML = '';
+                    data.forEach(user => {
+                        const li = document.createElement('li');
+                        li.textContent = `Username: ${user.username}, Email: ${user.email}`;
+                        userList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
